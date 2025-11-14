@@ -33,3 +33,17 @@ Below is the description of each column:
 | `previous_loan_defaults_on_file` | Indicator of previous loan defaults | Categorical |
 | `loan_status` *(target variable)* | Loan approval status: `1 = approved`, `0 = rejected` | Integer |
 
+
+### MileStones
+
+- I chose the data from Kaggle (Binary Classification Problem)
+- Started by exploaring and wrangling the data 
+- Data visualization and EDA to get a better idea
+- I used chatgpt to understand the finance part of the data since I'm not a specialist and I kept a markdown file in the repo for anyone willing to understand the dataset further
+- I tried multiple models (Logistic Regression,RandomForest...) and noticed that the Xgboost is the best
+- I created the train.py file to train and save the model in a json format and the Dictvictorizer
+- I created the predict.py file that contains the app the financial team will call to get results
+- I created a finance_dev.py file tried it locally through port .
+- I created a Dockerfile and containerize my app in the docker image loan-api
+- I created an account in Render and with the help of chatgpt I deployed my app with the following url : 'https://loan-prediction-3kej.onrender.com'
+- I tested the url in the finance.py and got the reuslts so it worked 
